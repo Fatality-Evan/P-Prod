@@ -1,18 +1,56 @@
-body {
+body{
     background-image: url(../image/background-web.png);
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+main h1{
+    font-size: 70px
+}
 
+main h2{
+    font-size: 30px
+}
+
+main img{
+    height: 40px;
+    margin-top: 20px;
+    border: rgb(181, 253, 255) 2px solid;
+}
+
+.txt-onglets{
+    font-size: 20px;
+    margin-top: 50px;
+    align-self: flex-start;
+    display: block;
+    margin-left: 20px;
+}
+
+li{
+    margin-bottom: 5px;
+}
 
 header{
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: rgba(92, 209, 255, 0.055);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.032
-);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.032);
+  height: 120px;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
@@ -93,8 +131,8 @@ header{
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: -100%; 
-  left: auto; 
+  right: -100%; /* Slide depuis la droite */
+  left: auto; /* Annule tout left */
   width: 300px;
   height: 30%;
 
@@ -105,7 +143,7 @@ header{
 
   background-color: rgb(161, 224, 224);
   border-bottom-left-radius: 5%;
-  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); 
+  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); /* Ombre à gauche maintenant */
 
   transition-duration: .25s;
 }
@@ -114,13 +152,62 @@ header{
   display: block;
   padding: 12px 24px;
   color: #333;
-  text-align: right; 
-  padding-right: 40px; 
+  text-align: right; /* Optionnel : aligne le texte à droite pour un look cohérent */
+  padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
   text-decoration: none;
 }
 .menu__item a:hover{
   color: aliceblue;
 }
+section {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Titres des sections centrés et en blanc */
+section h2 {
+    text-align: center;
+    color: white;
+}
+
+/* Conteneur du contenu de section : flexbox centré, avec espaces et retour à la ligne */
+section .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Variante pour inverser l'ordre du contenu (image à droite) */
+.reverse-content .content {
+    flex-direction: row-reverse;
+}
+
+/* Images dans les sections avec taille max, coins arrondis et transition sur zoom */
+section .content img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom sur image au survol */
+section .content img:hover {
+    transform: scale(1.1);
+}
+
+/* Texte des sections : largeur max, couleur blanche, taille lisible et padding */
+section .content p {
+    max-width: 600px;
+    color: white;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
 footer {
   margin-top: 10px;
   background-color: rgba(92, 209, 255, 0.548);
