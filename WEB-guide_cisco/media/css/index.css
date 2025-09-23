@@ -51,8 +51,8 @@ header{
   align-items: center;
   position: fixed;
   top: 20px;
-  right: 20px; /* Déplacé à droite */
-  left: auto; /* Annule le left */
+  right: 20px; 
+  left: auto; 
 
   width: 26px;
   height: 26px;
@@ -93,8 +93,8 @@ header{
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: -100%; /* Slide depuis la droite */
-  left: auto; /* Annule tout left */
+  right: -100%; 
+  left: auto; 
   width: 300px;
   height: 30%;
 
@@ -105,7 +105,7 @@ header{
 
   background-color: rgb(161, 224, 224);
   border-bottom-left-radius: 5%;
-  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); /* Ombre à gauche maintenant */
+  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); 
 
   transition-duration: .25s;
 }
@@ -114,8 +114,8 @@ header{
   display: block;
   padding: 12px 24px;
   color: #333;
-  text-align: right; /* Optionnel : aligne le texte à droite pour un look cohérent */
-  padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
+  text-align: right; 
+  padding-right: 40px; 
   text-decoration: none;
 }
 .menu__item a:hover{
