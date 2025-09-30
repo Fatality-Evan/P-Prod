@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 /*====================GENERAL==================*/
 
-body {
-    background-image: url(../image/background-web.png);
-=======
+
 body{
    background-image: url(../image/background-web.png);
     background-attachment: fixed;
->>>>>>> eceeb8fbdd85bd5a3f02d3a128a5501e88db0636
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -25,9 +21,9 @@ main h1{
     font-size: 70px
 }
 
-<<<<<<< HEAD
+
 /*========================header====================*/
-=======
+
 main h2{
     font-size: 30px
 }
@@ -50,7 +46,6 @@ li{
     margin-bottom: 5px;
 }
 
->>>>>>> eceeb8fbdd85bd5a3f02d3a128a5501e88db0636
 header{
   position: fixed;
   top: 0;
@@ -172,6 +167,12 @@ header{
 }
 .menu__item a:hover{
   color: aliceblue;
+}
+
+/* ===============main============== */
+
+main h1{
+  text-align: center;
 }
 
 /*================footer===============*/
