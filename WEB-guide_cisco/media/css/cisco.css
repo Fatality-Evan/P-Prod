@@ -173,23 +173,23 @@ section h2 {
 }
 
 /* Conteneur du contenu de section : flexbox centré, avec espaces et retour à la ligne */
-section .content {
+.content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     padding: 20px;
     gap: 20px;
 }
 
-/* Variante pour inverser l'ordre du contenu (image à droite) */
+
 .reverse-content .content {
     flex-direction: row-reverse;
 }
 
 /* Images dans les sections avec taille max, coins arrondis et transition sur zoom */
-section .content img {
-    max-width: 100px;
+.content img {
+    width: 400px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
