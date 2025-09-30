@@ -1,7 +1,14 @@
 /*====================GENERAL==================*/
 
+<<<<<<< HEAD
 body {
     background-image: url(../image/background-web.png);
+=======
+
+body{
+   background-image: url(../image/background-web.png);
+    background-attachment: fixed;
+>>>>>>> afede66b3940d4ed9456d48f55f0a04387510b25
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -19,7 +26,35 @@ main h1{
     font-size: 70px
 }
 
+<<<<<<< HEAD
 /*========================header====================*/
+=======
+
+/*========================header====================*/
+
+main h2{
+    font-size: 30px
+}
+
+main img{
+    height: 40px;
+    margin-top: 20px;
+    border: rgb(181, 253, 255) 2px solid;
+}
+
+.txt-onglets{
+    font-size: 20px;
+    margin-top: 50px;
+    align-self: flex-start;
+    display: block;
+    margin-left: 20px;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+>>>>>>> afede66b3940d4ed9456d48f55f0a04387510b25
 header{
   position: fixed;
   top: 0;
@@ -141,6 +176,12 @@ header{
 }
 .menu__item a:hover{
   color: aliceblue;
+}
+
+/* ===============main============== */
+
+main h1{
+  text-align: center;
 }
 
 /*================footer===============*/
