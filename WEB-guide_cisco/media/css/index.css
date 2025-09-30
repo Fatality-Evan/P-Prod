@@ -1,9 +1,14 @@
 /*====================GENERAL==================*/
 
+<<<<<<< HEAD
+body {
+    background-image: url(../image/background-web.png);
+=======
 
 body{
    background-image: url(../image/background-web.png);
     background-attachment: fixed;
+>>>>>>> afede66b3940d4ed9456d48f55f0a04387510b25
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -19,6 +24,9 @@ main h1{
     font-size: 70px
 }
 
+<<<<<<< HEAD
+/*========================header====================*/
+=======
 
 /*========================header====================*/
 
@@ -43,6 +51,7 @@ li{
     margin-bottom: 5px;
 }
 
+>>>>>>> afede66b3940d4ed9456d48f55f0a04387510b25
 header{
   position: fixed;
   top: 0;

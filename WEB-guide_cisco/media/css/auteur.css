@@ -1,6 +1,7 @@
-body{
+/*====================GENERAL==================*/
+
+body {
     background-image: url(../image/background-web.png);
-    background-attachment: fixed;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -18,28 +19,7 @@ main h1{
     font-size: 70px
 }
 
-main h2{
-    font-size: 30px
-}
-
-main img{
-    height: 40px;
-    margin-top: 20px;
-    
-}
-
-.txt-onglets{
-    font-size: 20px;
-    margin-top: 50px;
-    align-self: flex-start;
-    display: block;
-    margin-left: 20px;
-}
-
-li{
-    margin-bottom: 5px;
-}
-
+/*========================header====================*/
 header{
   position: fixed;
   top: 0;
@@ -58,6 +38,7 @@ header{
     height: auto;
 }
 
+/*=====================menu burger==================*/
 
 #menu__toggle {
   opacity: 0;
@@ -83,6 +64,7 @@ header{
   left: auto; 
 }
 
+
 .menu__btn {
   
   display: flex;
@@ -98,6 +80,7 @@ header{
   cursor: pointer;
   z-index: 1;
 }
+
 
 .menu__btn > span,
 .menu__btn > span::before,
@@ -159,55 +142,8 @@ header{
 .menu__item a:hover{
   color: aliceblue;
 }
-section {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px;
-}
 
-/* Titres des sections centrés et en blanc */
-section h2 {
-    text-align: center;
-    color: white;
-}
-
-/* Conteneur du contenu de section : flexbox centré, avec espaces et retour à la ligne */
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
-    padding: 20px;
-    gap: 20px;
-}
-
-
-.reverse-content .content {
-    flex-direction: row-reverse;
-}
-
-/* Images dans les sections avec taille max, coins arrondis et transition sur zoom */
-.content img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-/* Zoom sur image au survol */
-section .content img:hover {
-    transform: scale(1.1);
-}
-
-/* Texte des sections : largeur max, couleur blanche, taille lisible et padding */
-section .content p {
-    max-width: 600px;
-    color: white;
-    font-size: 18px;
-    padding: 0 10px;
-}
-
+/*================footer===============*/
 footer {
   margin-top: 10px;
   background-color: rgba(92, 209, 255, 0.548);
@@ -243,4 +179,76 @@ footer img {
 footer p {
   color: white;
   width: 100%;
+}
+
+
+/*====================MAIN==================*/
+
+.alex {
+  width: 95%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-arround;
+  align-items: center;
+  border: black 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.alex p {
+  margin: 100px;
+  text-align: center;
+  flex: 1;
+  font-size: 20px;
+}
+
+.alex img {
+  border-radius: 15px;
+}
+
+.evan {
+  width: 95%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-arround;
+  align-items: center;
+  border: black 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.evan p {
+  text-align: center;
+  flex: 1;
+  margin: 100px;
+  font-size: 20px;
+}
+
+.evan img {
+  border-radius: 15px;
+}
+
+.ervan {
+  width: 95%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-arround;
+  align-items: center;
+  border: black 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.ervan p {
+  margin: 100px;
+  text-align: center;
+  flex: 1;
+  font-size: 20px;
+}
+
+.ervan img {
+  border-radius: 15px;
 }

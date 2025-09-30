@@ -23,9 +23,9 @@ main h2{
 }
 
 main img{
-    height: 40px;
+    height: 80px;
     margin-top: 20px;
-    border: rgb(181, 253, 255) 2px solid;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.2);
 }
 
 .txt-onglets{
@@ -155,9 +155,12 @@ header{
   text-align: right; /* Optionnel : aligne le texte à droite pour un look cohérent */
   padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
   text-decoration: none;
+  transition: color 0.2s;
 }
-.menu__item a:hover{
-  color: aliceblue;
+
+/* Survol des éléments de liste (li) */
+li:hover, .menu__item:hover {
+  color: #0074D9 !important; /* Bleu vif */
 }
 footer {
   margin-top: 10px;
