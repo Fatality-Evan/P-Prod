@@ -1,14 +1,9 @@
 /*====================GENERAL==================*/
 
-<<<<<<< HEAD
-body {
-    background-image: url(../image/background-web.png);
-=======
 
 body{
    background-image: url(../image/background-web.png);
     background-attachment: fixed;
->>>>>>> afede66b3940d4ed9456d48f55f0a04387510b25
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -23,10 +18,6 @@ main{
 main h1{
     font-size: 70px
 }
-
-<<<<<<< HEAD
-/*========================header====================*/
-=======
 
 /*========================header====================*/
 
@@ -51,7 +42,6 @@ li{
     margin-bottom: 5px;
 }
 
->>>>>>> afede66b3940d4ed9456d48f55f0a04387510b25
 header{
   position: fixed;
   top: 0;
@@ -177,10 +167,23 @@ header{
 
 /* ===============main============== */
 
-
 main {
   padding: 85px 40px;
   margin: auto;
+}
+
+main p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 15px 500px 50px 100px;
+}
+
+/* ===============h1============== */
+
+h1 {
+  text-align: left;
+  flex: 1;
+  margin-left: 100px;
 }
 
 .txt-onglets {
@@ -188,12 +191,7 @@ main {
   display: flex;
   flex-direction: row;
   align-self: flex-start; 
-  margin-left: 20px;
-}
-
-main h1 {
-  text-align: left;
-  flex: 1;
+  margin: 150px 0 175px 50px;
 }
 
 h1 span {
@@ -203,12 +201,33 @@ h1 span {
 main img {
   height: 520px;
   width: 479px;
-  margin-right: 150px;
+  margin-right: 300px;
 }
 
-h2{
+/* ==============h2============== */
+.packet-tracer {
+  width: 100%;
   display: flex;
-  align-items: start;
+}
+
+h2 span {
+  font-weight: 800;
+}
+
+.packet-tracer h2{
+  margin-left:70px;
+  margin-bottom: 0;
+}
+
+/* =============h3============== */
+
+.utilisation {
+  width: 100%;
+  display: flex;
+}
+.utilisation h2{
+  margin-left:70px;
+  margin-bottom: 0;
 }
 
 /*================footer===============*/
