@@ -37,7 +37,7 @@ main img{
 }
 
 li{
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 header{
@@ -160,7 +160,7 @@ header{
 
 /* Survol des éléments de liste (li) */
 li:hover, .menu__item:hover {
-  color: #0074D9 !important; /* Bleu vif */
+  color: #ca0a0a !important; /* Bleu vif */
 }
 footer {
   margin-top: 10px;
