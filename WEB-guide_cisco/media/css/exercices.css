@@ -1,0 +1,70 @@
+/* Styles pour la zone de dépôt et l'aperçu */
+.drop-section {
+	margin: 20px 0;
+
+}
+.drop-zone {
+	border: 2px dashed #7fb3c9;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	background: rgba(127,179,201,0.06);
+	color: #063; /* texte par défaut */
+}
+.drop-zone.dragover {
+	background: rgba(0,116,217,0.06);
+	border-color: #0074D9;
+	box-shadow: 0 0 8px rgba(0,116,217,0.15);
+}
+.drop-zone button {
+	background: #0074D9;
+	color: white;
+	border: none;
+	padding: 6px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.drop-zone button:hover { opacity: 0.95; }
+.preview {
+	margin-top: 12px;
+	min-height: 60px;
+}
+.preview-image {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+.error { color: #b30000; }
+
+/* Styles pour les fichiers non-image */
+.file-card {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+	border-radius: 6px;
+	background: #fafafa;
+}
+.file-card .file-icon {
+	font-size: 1.8rem;
+}
+.file-card .file-info .file-name {
+	font-weight: bold;
+}
+.file-card .file-info .file-meta {
+	font-size: 0.9rem;
+	color: #666;
+}
+.file-card .file-download {
+	display: inline-block;
+	margin-top: 6px;
+	background: #0074D9;
+	color: white;
+	padding: 6px 10px;
+	border-radius: 4px;
+	text-decoration: none;
+}
+.file-card .file-download:hover { opacity: 0.95; }
+
