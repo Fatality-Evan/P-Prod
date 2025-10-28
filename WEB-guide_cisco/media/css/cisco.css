@@ -8,38 +8,65 @@ body{
     box-sizing: border-box;
 }
 
-  main{
+main{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 80px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 main h1{
-    font-size: 70px
+    font-size: 70px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
 }
 
-main h2{
-    font-size: 30px
+
+.content-section {
+    width: 100%;
+    margin: 40px 0;
 }
 
-main img{
-    height: 40px;
-    margin-top: 20px;
-    
+.content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.txt-onglets{
-    font-size: 20px;
-    margin-top: 50px;
-    align-self: flex-start;
-    display: block;
-    margin-left: 20px;
+.reverse-section .content-block {
+    flex-direction: row-reverse;
 }
 
-li{
-    margin-bottom: 5px;
+.text-part {
+    flex: 1;
+    min-width: 300px;
 }
 
+.text-part p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+}
+
+.image-part {
+    flex: 0 0 auto;
+}
+
+.image-part img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Votre CSS existant reste inchangé */
 header{
   position: fixed;
   top: 0;
@@ -57,7 +84,6 @@ header{
     width: 250px;
     height: auto;
 }
-
 
 #menu__toggle {
   opacity: 0;
@@ -84,17 +110,14 @@ header{
 }
 
 .menu__btn {
-  
   display: flex;
   align-items: center;
   position: fixed;
   top: 20px;
-  right: 20px; /* Déplacé à droite */
-  left: auto; /* Annule le left */
-
+  right: 20px;
+  left: auto;
   width: 26px;
   height: 26px;
-
   cursor: pointer;
   z-index: 1;
 }
@@ -104,12 +127,9 @@ header{
 .menu__btn > span::after {
   display: block;
   position: absolute;
-
   width: 100%;
   height: 2px;
-
   background-color: green;
-
   transition-duration: .25s;
 }
 
@@ -131,20 +151,16 @@ header{
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: -100%; /* Slide depuis la droite */
-  left: auto; /* Annule tout left */
+  right: -100%;
+  left: auto;
   width: 300px;
   height: 30%;
-
   margin: 0;
   padding: 80px 0;
-
   list-style: none;
-
   background-color: rgb(161, 224, 224);
   border-bottom-left-radius: 5%;
-  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); /* Ombre à gauche maintenant */
-
+  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: .25s;
 }
 
@@ -152,60 +168,13 @@ header{
   display: block;
   padding: 12px 24px;
   color: #333;
-  text-align: right; /* Optionnel : aligne le texte à droite pour un look cohérent */
-  padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
+  text-align: right;
+  padding-right: 40px;
   text-decoration: none;
 }
-.menu__item a:hover{
+
+.menu__item:hover{
   color: aliceblue;
-}
-section {
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-/* Titres des sections centrés et en blanc */
-section h2 {
-    text-align: center;
-    color: white;
-}
-
-/* Conteneur du contenu de section : flexbox centré, avec espaces et retour à la ligne */
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
-    padding: 20px;
-    gap: 20px;
-}
-
-
-.reverse-content .content {
-    flex-direction: row-reverse;
-}
-
-/* Images dans les sections avec taille max, coins arrondis et transition sur zoom */
-.content img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-/* Zoom sur image au survol */
-section .content img:hover {
-    transform: scale(1.1);
-}
-
-/* Texte des sections : largeur max, couleur blanche, taille lisible et padding */
-section .content p {
-    max-width: 600px;
-    color: white;
-    font-size: 18px;
-    padding: 0 10px;
 }
 
 footer {
@@ -221,8 +190,8 @@ footer {
   min-height: 100px;
   flex-wrap: wrap;
 }
+
 footer a {
-    
   color: #000000;
   padding: 5px 12px;
   text-decoration: none;
@@ -233,14 +202,14 @@ footer a:hover {
   color: white;
 }
 
-
 footer img {
   width: 85px;
   height: 70px;
 }
 
-
 footer p {
   color: white;
   width: 100%;
 }
+
+
