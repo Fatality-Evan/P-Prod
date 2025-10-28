@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="media/css/exercices.css">
+  <title>Exercice</title>
 </head>
 <body>
 <header>
@@ -26,37 +27,176 @@
         <li><a class="menu__item" href="peripheriques.html">PERIPHERIQUES</a></li>
         <li><a class="menu__item" href="cables.html">CABLES</a></li>
         <li><a class="menu__item" href="onglets.html">ONGLETS</a></li>
-        <li><a class="menu__item" href="configurations.html">CONFIGURATIONS</a></li> 
+        <li><a class="menu__item" href="configurations.html">CONFIGURATIONS</a></li>
         <li><a class="menu__item" href="exercices.html">EXERCICES</a></li>
       </ul>
     </div>
   </nav>
 </header>
-    <main>
-      <h1>Exercice Ping</h1>
-      <h2>Exercice 1</h2>
-      <p>Essayez de ping les 2 PCs suivants</p>
-      <img src="media/image/ex1.png" alt="Exercice 1">
-      <h2>Exercice 2</h2>
-      <p>Essayez de ping les 2 PCs suivants avec l'intermédiaire d'un switch</p>
-      <img src="media/image/ex2.png" alt="Exercice 2">
-      <h2>Exercice 3</h2>
-      <p>Essayez de ping les PCs suivants dans des VLANs différentes</p>
-      <img src="media/image/ex3.png" alt="Exercice 3">
-      <h2>Exercice 4</h2>
-      <p>Essayez de connecter les PCs en wifi</p>
-      <img src="media/image/ex4.png" alt="Exercice 4">
-      <h2>Exercice 5</h2>
-      <p>Configurer un serveur DHCP pour deux PCs dans une VLAN</p>
-      <img src="media/image/ex5.png" alt="Exercice 5">
-    </main>
-        <footer>
-        <p><strong>© 2025 - COPYRIGHT</strong></p>
-        <a href="https://www.etml.ch/" target="_blank">
-            <img src="media/image/logo-etml.png" alt="site web de l'etml">
-        </a>
-        
-        <a href="auteur.html"><strong>Auteurs</strong></a>
-    </footer>
+
+<main>
+  <h1>Exercice Ping</h1>
+
+  <h2>Exercice 1</h2>
+  <p>Essayez de ping les 2 PCs suivants</p>
+  <div class="drop-zone drop-area" data-image="media/image/ex1.png" data-target="ex1-preview">Glisser-déposer un fichier ici pour afficher l'image liée ou <button type="button" class="browse-btn">Parcourir</button>
+    <input type="file" class="file-input" style="display:none">
+  </div>
+  <div id="ex1-preview" class="preview" aria-live="polite"></div>
+
+  <h2>Exercice 2</h2>
+  <p>Essayez de ping les 2 PCs suivants avec l'intermédiaire d'un switch</p>
+  <div class="drop-zone drop-area" data-image="media/image/ex2.png" data-target="ex2-preview">Glisser-déposer un fichier ici pour afficher l'image liée ou <button type="button" class="browse-btn">Parcourir</button>
+    <input type="file" class="file-input" style="display:none">
+  </div>
+  <div id="ex2-preview" class="preview" aria-live="polite"></div>
+
+  <h2>Exercice 3</h2>
+  <p>Essayez de ping les PCs suivants dans des VLANs différentes</p>
+  <div class="drop-zone drop-area" data-image="media/image/ex3.png" data-target="ex3-preview">Glisser-déposer un fichier ici pour afficher l'image liée ou <button type="button" class="browse-btn">Parcourir</button>
+    <input type="file" class="file-input" style="display:none">
+  </div>
+  <div id="ex3-preview" class="preview" aria-live="polite"></div>
+
+  <h2>Exercice 4</h2>
+  <p>Essayez de connecter les PCs en wifi</p>
+  <div class="drop-zone drop-area" data-image="media/image/ex4.png" data-target="ex4-preview">Glisser-déposer un fichier ici pour afficher l'image liée ou <button type="button" class="browse-btn">Parcourir</button>
+    <input type="file" class="file-input" style="display:none">
+  </div>
+  <div id="ex4-preview" class="preview" aria-live="polite"></div>
+
+  <h2>Exercice 5</h2>
+  <p>Configurer un serveur DHCP pour deux PCs dans une VLAN</p>
+  <div class="drop-zone drop-area" data-image="media/image/ex5.png" data-target="ex5-preview">Glisser-déposer un fichier ici pour afficher l'image liée ou <button type="button" class="browse-btn">Parcourir</button>
+    <input type="file" class="file-input" style="display:none">
+  </div>
+  <div id="ex5-preview" class="preview" aria-live="polite"></div>
+
+</main>
+
+<footer>
+  <p><strong>© 2025 - COPYRIGHT</strong></p>
+  <a href="https://www.etml.ch/" target="_blank">
+    <img src="media/image/logo-etml.png" alt="site web de l'etml">
+  </a>
+  <a href="auteur.html"><strong>Auteurs</strong></a>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Gère toutes les zones de dépôt (une par exercice)
+  document.querySelectorAll('.drop-area').forEach(function(area) {
+    const fileInput = area.querySelector('.file-input');
+    const browseBtn = area.querySelector('.browse-btn');
+    const targetId = area.getAttribute('data-target');
+    const imageToShow = area.getAttribute('data-image');
+    const preview = document.getElementById(targetId);
+
+    function preventDefaults(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(function(evt) {
+      area.addEventListener(evt, preventDefaults, false);
+    });
+
+    ['dragenter', 'dragover'].forEach(function(evt) {
+      area.addEventListener(evt, function() { area.classList.add('dragover'); });
+    });
+    ['dragleave', 'drop'].forEach(function(evt) {
+      area.addEventListener(evt, function() { area.classList.remove('dragover'); });
+    });
+
+    area.addEventListener('drop', function(e) {
+      const dt = e.dataTransfer;
+      const files = dt.files;
+      if (!files || files.length === 0) return;
+      const file = files[0];
+      // Si un attribut data-image est présent, on affiche cette image précise
+      if (imageToShow && preview) {
+        clearPreviewURL(preview);
+        preview.innerHTML = '<img src="' + imageToShow + '" class="preview-image" alt="Affichage">';
+        return;
+      }
+      // Sinon, selon le type de fichier, on affiche une prévisualisation image ou une carte fichier
+      clearPreviewURL(preview);
+      if (file.type && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function(ev) {
+          preview.innerHTML = '<img src="' + ev.target.result + '" class="preview-image" alt="' + file.name + '">';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        // non-image : créer un object URL pour téléchargement et affichage d'info
+        const url = URL.createObjectURL(file);
+        preview.dataset.objectUrl = url;
+        preview.innerHTML = '<div class="file-card">\n' +
+                            '<div class="file-icon">📄</div>\n' +
+                            '<div class="file-info">\n' +
+                              '<div class="file-name">' + escapeHtml(file.name) + '</div>\n' +
+                              '<div class="file-meta">' + escapeHtml(file.type || 'Inconnu') + ' • ' + formatBytes(file.size) + '</div>\n' +
+                              '<a class="file-download" href="' + url + '" download="' + encodeURIComponent(file.name) + '">Télécharger / Ouvrir</a>\n' +
+                            '</div>\n' +
+                          '</div>';
+      }
+    });
+
+    browseBtn.addEventListener('click', function() { fileInput.click(); });
+
+    fileInput.addEventListener('change', function(e) {
+      const files = e.target.files;
+      if (!files || files.length === 0) return;
+      const file = files[0];
+      // data-image override
+      if (imageToShow && preview) {
+        clearPreviewURL(preview);
+        preview.innerHTML = '<img src="' + imageToShow + '" class="preview-image" alt="Affichage">';
+        return;
+      }
+      clearPreviewURL(preview);
+      if (file.type && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function(ev) {
+          preview.innerHTML = '<img src="' + ev.target.result + '" class="preview-image" alt="' + file.name + '">';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        const url = URL.createObjectURL(file);
+        preview.dataset.objectUrl = url;
+        preview.innerHTML = '<div class="file-card">\n' +
+                            '<div class="file-icon">📄</div>\n' +
+                            '<div class="file-info">\n' +
+                              '<div class="file-name">' + escapeHtml(file.name) + '</div>\n' +
+                              '<div class="file-meta">' + escapeHtml(file.type || 'Inconnu') + ' • ' + formatBytes(file.size) + '</div>\n' +
+                              '<a class="file-download" href="' + url + '" download="' + encodeURIComponent(file.name) + '">Télécharger / Ouvrir</a>\n' +
+                            '</div>\n' +
+                          '</div>';
+      }
+    });
+  });
+});
+
+// Helpers pour gérer object URLs et format
+function clearPreviewURL(preview) {
+  if (preview && preview.dataset && preview.dataset.objectUrl) {
+    try { URL.revokeObjectURL(preview.dataset.objectUrl); } catch(e) {}
+    delete preview.dataset.objectUrl;
+  }
+}
+
+function formatBytes(bytes) {
+  if (bytes === 0) return '0 B';
+  const k = 1024;
+  const sizes = ['B','KB','MB','GB','TB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+}
+
+function escapeHtml(text) {
+  if (!text) return '';
+  return text.replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c]; });
+}
+</script>
 </body>
 </html>
