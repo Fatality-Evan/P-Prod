@@ -20,17 +20,47 @@ main h1{
 }
 
 
+/*========================header====================*/
+
+main h2{
+    font-size: 30px
+}
+
+main img{
+    height: 40px;
+    margin-top: 20px;
+}
+
+.txt-onglets{
+    font-size: 20px;
+    margin-top: 50px;
+    align-self: flex-start;
+    display: block;
+    margin-left: 20px;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+
 header{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(92, 209, 255, 0.055);
+  background-color: rgba(92, 209, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.032);
   height: 120px;
   display: flex;
   align-items: center;
+
+  backdrop-filter: blur(2.567px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .logo img {
@@ -117,7 +147,7 @@ header{
   right: -100%; /* Slide depuis la droite */
   left: auto; /* Annule tout left */
   width: 300px;
-  height: 30%;
+  height: 225%;
 
   margin: 0;
   padding: 80px 0;
