@@ -172,44 +172,6 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   color: aliceblue;
 }
 
-/*================footer===============*/
-footer {
-  margin-top: 10px;
-  background-color: rgba(92, 209, 255, 0.548);
-  padding: 15px 0;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 100px;
-  flex-wrap: wrap;
-}
-footer a {
-    
-  color: #000000;
-  padding: 5px 12px;
-  text-decoration: none;
-  margin: 5px 0;
-}
-
-footer a:hover {
-  color: white;
-}
-
-
-footer img {
-  width: 85px;
-  height: 70px;
-}
-
-
-footer p {
-  color: white;
-  width: 100%;
-}
-
 
 /*====================MAIN==================*/
 
@@ -280,4 +242,48 @@ footer p {
 
 .ervan img {
   border-radius: 15px;
+}
+
+/*================footer===============*/
+footer {
+  margin-top: 10px;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  flex-wrap: wrap;
+  background-color: rgba(92, 209, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.032);
+  height: 120px;
+  backdrop-filter: blur(2.567px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+    
+  color: #000000;
+  padding: 5px 12px;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+footer a:hover {
+  color: white;
+}
+
+
+footer img {
+  width: 85px;
+  height: 70px;
+}
+
+
+footer p {
+  color: black;
+  width: 100%;
 }
