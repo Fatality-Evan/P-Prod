@@ -9,25 +9,6 @@ body{
     box-sizing: border-box;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 80px;
-}
-main h1{
-    font-size: 70px
-}
-
-main h2{
-    font-size: 30px
-}
-
-main img{
-    height: 40px;
-    margin-top: 20px;
-}
-
 /*========================header====================*/
 
 .txt-onglets{
@@ -177,15 +158,29 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 /* ===============main============== */
 
-main {
-  padding: 85px 40px;
-  margin: auto;
-}
-
 main p {
   font-size: 1.5rem;
   text-align: justify;
   margin: 15px 500px 50px 100px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+main h1{
+    font-size: 70px
+}
+
+main h2{
+    font-size: 30px
+}
+
+main img{
+    height: 40px;
+    margin-top: 20px;
 }
 
 /* ===============h1============== */
@@ -250,7 +245,7 @@ iframe.youtube-video {
   transition: box-shadow 220ms ease, transform 220ms ease;
   border: none;
   display: block;
-  margin: 20px auto;
+  margin: 60px;
 }
 
 iframe.youtube-video:hover {
@@ -260,7 +255,6 @@ iframe.youtube-video:hover {
 
 /*================footer===============*/
 footer {
-  margin-top: 10px;
   padding: 15px 0;
   text-align: center;
   display: flex;
@@ -275,7 +269,8 @@ footer {
   backdrop-filter: blur(2.567px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: -10px;
 }
 
 footer a {
