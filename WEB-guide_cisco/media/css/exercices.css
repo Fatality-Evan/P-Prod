@@ -9,35 +9,7 @@ body{
     box-sizing: border-box;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 80px;
-}
-main h1{
-    font-size: 70px
-}
-
-
 /*========================header====================*/
-
-main h2{
-    font-size: 30px
-}
-
-main img{
-    height: 40px;
-    margin-top: 20px;
-}
-
-.txt-onglets{
-    font-size: 20px;
-    margin-top: 50px;
-    align-self: flex-start;
-    display: block;
-    margin-left: 20px;
-}
 
 li{
     margin-bottom: 5px;
@@ -177,17 +149,32 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 /* ===============main============== */
 
-main {
-  padding: 85px 40px;
-  margin: auto;
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+main h1{
+    font-size: 90px;
+    color: #033e58;
 }
 
+main h2{
+    font-size: 30px
+}
 
+main img{
+    height: 40px;
+    margin-top: 20px;
+}
 
-h1 {
-  text-align: left;
-  flex: 1;
-  margin-left: 100px;
+.txt-onglets{
+    font-size: 20px;
+    margin-top: 50px;
+    align-self: flex-start;
+    display: block;
+    margin-left: 20px;
 }
 
 /* ===============dropzone============== */

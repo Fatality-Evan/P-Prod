@@ -168,7 +168,6 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
   text-decoration: none;
 }
-
 .menu__item:hover {
   color: #6fc3fc;
   border-radius: 10px;
@@ -250,6 +249,17 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   height: 700px;
   margin-bottom: 20px;
+}
+
+/* Ombre spécifique pour l'image du siège Cisco */
+.alex img, .evan img, .ervan img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+.alex img:hover, .evan img:hover, .ervan img:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  transform: translateY(-4px);
 }
 
 /*================footer===============*/
