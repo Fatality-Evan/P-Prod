@@ -11,35 +11,7 @@ body{
     box-sizing: border-box;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 80px;
-}
-main h1{
-    font-size: 70px
-}
-
-
 /*========================header====================*/
-
-main h2{
-    font-size: 30px
-}
-
-main img{
-    height: 40px;
-    margin-top: 20px;
-}
-
-.txt-onglets{
-    font-size: 20px;
-    margin-top: 50px;
-    align-self: flex-start;
-    display: block;
-    margin-left: 20px;
-}
 
 li{
     margin-bottom: 5px;
@@ -158,7 +130,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
   background-color: rgb(161, 224, 224);
   border-bottom-left-radius: 5%;
-  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); /* Ombre à gauche maintenant */
+  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2);
 
   transition-duration: .25s;
 }
@@ -167,8 +139,8 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   display: block;
   padding: 12px 24px;
   color: #333;
-  text-align: right; /* Optionnel : aligne le texte à droite pour un look cohérent */
-  padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
+  text-align: right;
+  padding-right: 40px;
   text-decoration: none;
 }
 
@@ -179,9 +151,78 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 /* ===============main============== */
 
+main {
+  max-width: 1100px;
+  margin: 140px auto 60px;
+  padding: 30px;
+}
+
+
 main h1{
   text-align: center;
+  font-size: 90px;
+  margin: 0 0 18px;
+  color: #033e58;
 }
+
+
+main h2{
+  font-size: 20px;
+  margin: 0 0 8px;
+  color: #0a6b8a;
+}
+
+
+main img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 24px auto;
+}
+
+main img{
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+main img:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  transform: translateY(-4px);
+}
+
+.pres-page,
+.expli-ongl{
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 18px 0;
+  color: #222;
+  text-align: justify;
+}
+
+main section{
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.035);
+  background-color: #0a6a8a17;
+  border-radius: 10px;
+}
+
+main section img{
+  margin-top: 12px;
+  height: 180px;
+}
+
+main section img{
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+main section img:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  transform: translateY(-4px);
+}
+
 
 /*================footer===============*/
 footer {
