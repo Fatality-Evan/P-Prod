@@ -66,6 +66,17 @@ main h1{
     border-radius: 10px;
 }
 
+/* Ombre spécifique pour l'image du siège Cisco */
+.image-part img.siege-cisco {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+.image-part img.siege-cisco:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  transform: translateY(-4px);
+}
+
 /*========================header====================*/
 
 main h2{
@@ -190,8 +201,8 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: -100%; /* Slide depuis la droite */
-  left: auto; /* Annule tout left */
+  right: -100%;
+  left: auto;
   width: 300px;
   height: 225%;
 
@@ -202,7 +213,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
   background-color: rgb(161, 224, 224);
   border-bottom-left-radius: 5%;
-  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); /* Ombre à gauche maintenant */
+  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2);
 
   transition-duration: .25s;
 }
@@ -211,12 +222,14 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   display: block;
   padding: 12px 24px;
   color: #333;
-  text-align: right; /* Optionnel : aligne le texte à droite pour un look cohérent */
-  padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
+  text-align: right;
+  padding-right: 40px;
   text-decoration: none;
 }
-.menu__item a:hover{
-  color: aliceblue;
+
+.menu__item:hover {
+  color: #6fc3fc;
+  border-radius: 10px;
 }
 
 /*================footer===============*/

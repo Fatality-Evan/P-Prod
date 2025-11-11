@@ -168,8 +168,10 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
   text-decoration: none;
 }
-.menu__item a:hover{
-  color: aliceblue;
+
+.menu__item:hover {
+  color: #6fc3fc;
+  border-radius: 10px;
 }
 
 
