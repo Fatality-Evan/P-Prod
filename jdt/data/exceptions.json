@@ -11,5 +11,15 @@
     "status": "Done",
     "author": "Dudu823",
     "patch": true
+  },
+  {
+    "id": "c0536a86-125f-40b0-b412-6524668fde56",
+    "type": "commitless",
+    "name": "Scrum",
+    "description": "Scrum meeting",
+    "date": "2025-11-18T08:01:00.000Z",
+    "duration": 5,
+    "status": "Done",
+    "author": "Dudu823"
   }
 ]
