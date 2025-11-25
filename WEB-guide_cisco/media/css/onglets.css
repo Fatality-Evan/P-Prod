@@ -6,15 +6,13 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 
 /*========================header====================*/
-
 li{
   margin-bottom: 5px;
 }
-
 
 header{
   position: fixed;
@@ -41,7 +39,6 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /*=====================menu burger==================*/
-
 #menu__toggle {
   opacity: 0;
 }
@@ -116,30 +113,28 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: -100%; /* Slide depuis la droite */
-  left: auto; /* Annule tout left */
+  right: -100%;
+  left: auto;
   width: 300px;
   height: 225%;
-
   margin: 0;
   padding: 80px 0;
-
+  padding-bottom: 100px;
   list-style: none;
-
   background-color: rgb(161, 224, 224);
   border-bottom-left-radius: 5%;
   box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.2); /* Ombre à gauche maintenant */
-
   transition-duration: .25s;
 }
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 10px 24px;
   color: #333;
   text-align: right; /* Optionnel : aligne le texte à droite pour un look cohérent */
   padding-right: 40px; /* Ajoute un peu d'espace à droite pour éviter le bord */
   text-decoration: none;
+  transition: color 220ms ease, background-color 220ms ease;
 }
 
 .menu__item:hover {
